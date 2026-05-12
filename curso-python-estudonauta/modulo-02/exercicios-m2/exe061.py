@@ -2,7 +2,10 @@ print('Gerador de PA')
 print('-=-' *10)
 primeiro = int(input('Primeiro termo: '))
 razão = int(input('Razão da PA: '))
-décimo = primeiro + (10 - 1) * razão
-for c in range(primeiro, décimo + razão, razão):
-    print(f' {c}', end=' → ')
+termo = primeiro
+cont = 1
+while cont <= 10:
+    print(f' {termo}', end=' → ')
+    termo += razão
+    cont += 1
 print('Acabou!')
